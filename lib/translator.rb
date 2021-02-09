@@ -12,8 +12,7 @@ require 'pry'
 
 def load_library(file)
   emoticons = YAML::parse(File.open(file))
-  emoticons.value
-  binding.pry
+  emoticons
 end
 
 def get_japanese_emoticon
