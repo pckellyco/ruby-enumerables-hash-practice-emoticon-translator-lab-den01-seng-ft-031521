@@ -27,6 +27,7 @@ def get_japanese_emoticon(file, string)
       emoticon_library[key][:japanese]
        binding.pry
     end
+  end
 end
 
 def get_english_meaning
