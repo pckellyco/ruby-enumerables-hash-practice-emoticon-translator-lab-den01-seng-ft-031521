@@ -11,8 +11,8 @@ require 'pry'
 # japanese:
 
 def load_library(file)
-  emoticons = YAML.load(file)
-  
+  emoticons_file = YAML.load(file)
+  emoticons_file
   binding.pry
 end
 
