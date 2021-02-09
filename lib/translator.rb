@@ -20,7 +20,7 @@ require 'yaml'
 
 require 'pry'
 
-def get_japanese_emoticon(string, file)
+def get_japanese_emoticon(file, string)
   emoticon_library = load_library(file)
   binding.pry
 end
