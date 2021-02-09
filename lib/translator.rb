@@ -20,8 +20,13 @@ require 'yaml'
 
 require 'pry'
 
-def get_japanese_emoticon(file, string)
+def get_japanese_emoticon(file, english_emoticon)
   emoticon_library = load_library(file)
+  emoticon_library.each do |emotion, languages|
+    languages.each do |language, emoticon|
+      if languages[emoticon] == english_emoticon
+        
+  
   symbols = emoticon_library.each do |key, value|
     value.each do |language, symbol|
       if value[language][symbol] === string
