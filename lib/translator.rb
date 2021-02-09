@@ -26,6 +26,7 @@ def get_japanese_emoticon(file, string)
     if emoticon_library[key][:english] == string
       japanese_symbol = emoticon_library[key][:japanese]
       japanese_symbol
+    else ""
       binding.pry
     end
   end
