@@ -2,13 +2,11 @@
 
 # load yml file
 # extract values from file
-# create key = emoticons
-# values =
-# english:
-# japanese:
+# create new hash
 
 require 'yaml'
 require 'pry'
+
 
 def load_library(file)
   emoticons = YAML.load_file(file)
