@@ -27,7 +27,6 @@ def get_japanese_emoticon(file, string)
       japanese_symbol = emoticon_library[key][:japanese]
       japanese_symbol
     else "Sorry, that emoticon was not found"
-      binding.pry
     end
     end
   end
