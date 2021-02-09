@@ -23,7 +23,9 @@ require 'pry'
 def get_japanese_emoticon(file, string)
   emoticon_library = load_library(file)
   symbols = emoticon_library.each do |key, value|
-    if emoticon_library[key][:english] == string
+    if !emoticon_library[key][:english] == string
+      sorry_message = "Sorry, that emoticon was not found"
+      
       japanese_symbol = emoticon_library[key][:japanese]
       japanese_symbol
     end
