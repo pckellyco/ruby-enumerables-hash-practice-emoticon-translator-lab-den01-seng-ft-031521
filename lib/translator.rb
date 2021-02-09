@@ -12,7 +12,7 @@ require 'pry'
 
 def load_library(file)
   emoticons_file = YAML.load(file)
-  question = emoticons_file.inspect
+  emoticons_file.inspect
   binding.pry
 end
 
