@@ -29,8 +29,8 @@ def get_japanese_emoticon(file, english_emoticon)
         japanese_symbol += languages[:japanese]
       else japanese_symbol = "Sorry, that emoticon was not found"
       end
+      japanese_symbol
     end
-    japanese_symbol
   end
 end
 
