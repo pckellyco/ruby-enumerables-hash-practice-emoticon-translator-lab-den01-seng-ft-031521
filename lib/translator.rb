@@ -7,7 +7,6 @@
 require 'yaml'
 require 'pry'
 
-
 def load_library(file)
   emoticons = YAML.load_file(file)
   answer = emoticons.each_with_object({}) do |(emoticon, symbol), new_hash|
