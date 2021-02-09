@@ -11,7 +11,7 @@ require 'yaml'
 require 'pry'
 
 def load_library(file)
-  emoticons =File.open(file))
+  emoticons = YAML.load_file(file)
   emoticons
 end
 
