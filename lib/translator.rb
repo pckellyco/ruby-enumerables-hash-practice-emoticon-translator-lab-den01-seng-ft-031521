@@ -22,8 +22,11 @@ require 'pry'
 
 def get_japanese_emoticon(file, string)
   emoticon_library = load_library(file)
-  symbol = emoticon_library.each do |key, value
-  binding.pry
+  symbols = emoticon_library.each do |key, value|
+    if emoticon_library[key][:english] == string
+      emoticon_library[key][:japanese]
+       binding.pry
+    end
 end
 
 def get_english_meaning
