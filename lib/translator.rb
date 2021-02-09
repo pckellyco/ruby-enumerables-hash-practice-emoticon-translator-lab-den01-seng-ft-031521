@@ -19,8 +19,9 @@ end
 # check input sympol to emoticon[:english],
 # return matching emoticon[:japanese]
 
-def get_japanese_emoticon(lo)
-  # code goes here
+def get_japanese_emoticon(string, file)
+  emoticon_library = load_library(file)
+  binding.pry
 end
 
 def get_english_meaning
