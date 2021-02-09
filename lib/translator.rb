@@ -13,6 +13,7 @@ require 'pry'
 def load_library(file)
   emoticons_file = YAML.load(file)
   emoticons_file do |key, value|
+    value.each
     end
   binding.pry
 end
