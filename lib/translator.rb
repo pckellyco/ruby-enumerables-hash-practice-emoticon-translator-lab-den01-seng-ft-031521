@@ -34,7 +34,7 @@ def get_english_meaning(file, japanese_emoticon)
   emotions = load_library(file)
   emotions.each do |emotion, language|
     if emotions[emotion][:japanese] == japanese_emoticon
-        return emotions[emotion]
+        return emotion
     end
   end
   return "Sorry, that emoticon was not found"
