@@ -17,6 +17,7 @@ end
 # return matching emoticon[:japanese]
 
 require 'yaml'
+
 require 'pry'
 
 def get_japanese_emoticon(string, file)
