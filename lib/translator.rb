@@ -21,15 +21,13 @@ require 'yaml'
 require 'pry'
 
 def get_japanese_emoticon(file, english_emoticon)
-  load_library(file).each do |emotion, languages|
-    languages.each do |language, emoticon|
-      if languages[:english] == english_emoticon
-        return languages[:japanese]
-      else japanese_symbol = "Sorry, that emoticon was not found"
-      end
-      japanese_symbol
+  emotions = load_library(file)
+  emotions.each do |emotion, language|
+    if emotions[emotion][:english] == english_emoticon
+        return emotions[emotion][:japanese]
     end
   end
+  return "Sorry, that emoticon was not found."
 end
 
 def get_english_meaning
