@@ -1,14 +1,14 @@
 # require modules here
 
-require 'yaml'
-require 'pry'
-
 # load yml file
 # extract values from file
 # create key = emoticons
 # values =
 # english:
 # japanese:
+
+require 'yaml'
+require 'pry'
 
 def load_library(file)
   emoticons = YAML::parse(File.open(file))
