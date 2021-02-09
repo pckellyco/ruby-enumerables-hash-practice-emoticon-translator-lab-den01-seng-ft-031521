@@ -22,6 +22,7 @@ require 'pry'
 
 def get_japanese_emoticon(file, string)
   emoticon_library = load_library(file)
+  symbol = emoticon_library.each do |key, value
   binding.pry
 end
 
