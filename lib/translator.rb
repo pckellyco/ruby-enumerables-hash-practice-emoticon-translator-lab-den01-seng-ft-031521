@@ -11,7 +11,7 @@ require 'pry'
 # japanese:
 
 def load_library(file)
-  emoticons = YAML::parse.load(file)
+  emoticons = YAML::parse(File.load(file))
   emoticons
   binding.pry
 end
