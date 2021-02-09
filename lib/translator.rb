@@ -10,7 +10,7 @@ require 'pry'
 def load_library(file)
   emoticons = YAML.load_file(file)
   answer = emoticons.each_with_object({}) do |(emoticon, symbol), new_hash|
-    new_hash = {:emoticon {english: symbol[0], japanese: symbol[1]}}
+    new_hash[emoticon] = {english: symbol[0], japanese: symbol[1]}}
     binding.pry
     end
 end
