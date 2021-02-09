@@ -15,7 +15,11 @@ def load_library(file)
     end
 end
 
-def get_japanese_emoticon
+# use load_library helper function 
+# check input sympol to emoticon[:english],
+# return matching emoticon[:japanese]
+
+def get_japanese_emoticon(lo)
   # code goes here
 end
 
