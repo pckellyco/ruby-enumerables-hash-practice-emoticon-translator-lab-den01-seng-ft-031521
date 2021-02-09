@@ -4,9 +4,6 @@
 # extract values from file
 # create new hash
 
-require 'yaml'
-require 'pry'
-
 def load_library(file)
   emoticons = YAML.load_file(file)
   answer = emoticons.each_with_object({}) do |(emoticon, symbol), new_hash|
@@ -18,6 +15,9 @@ end
 # use load_library helper function 
 # check input sympol to emoticon[:english],
 # return matching emoticon[:japanese]
+
+require 'yaml'
+require 'pry'
 
 def get_japanese_emoticon(string, file)
   emoticon_library = load_library(file)
