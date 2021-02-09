@@ -23,12 +23,11 @@ require 'pry'
 def get_japanese_emoticon(file, english_emoticon)
   load_library(file).each do |emotion, languages|
     languages.each do |language, emoticon|
-      japanese_symbol = ""
       if languages[:english] == english_emoticon
-        japanese_symbol += languages[:japanese]
-      else japanese_symbol = "Sorry, that emoticon was not found"
+        return languages[:japanese]
+      else 
+        return"Sorry, that emoticon was not found"
       end
-      japanese_symbol
     end
   end
 end
